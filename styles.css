@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+}
+nav{
+    background-color: black;
+    color: purple;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding :0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.gameArea{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(229, 215, 242);
+
+}
+
+.gameInfo{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.br-0{
+    border-right: 0px;
+}
+.bl-0{
+    border-left: 0px;
+}
+.bt-0{
+    border-top: 0px;
+}
+.bb-0{
+    border-bottom: 0px;
+}

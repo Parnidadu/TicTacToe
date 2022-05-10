@@ -47,4 +47,16 @@ Array.from(boxes).forEach(element=>{
         }
     })
 })
+// Adding event listener for Reset button..
 
+reset.addEventListener('click',()=>{
+    let boxTexts = document.querySelectorAll('.boxText');
+    Array.from(boxTexts).forEach(element=>{
+        element.innerText = "";
+    });
+    turn  = 'X';
+    isGameover = false;
+    if(!isGameover){
+        document.getElementsByClassName('info')[0].innerText = "Turn for " + turn;
+    }
+})
